@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<RelativeLayout
+
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+   android:layout_gravity="center"
+    android:background="@drawable/round_drawable">
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="5dp"
+        android:layout_marginTop="25sp"
+        android:paddingTop="15dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:text="NAME"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@id/textname"
+        android:layout_toEndOf="@+id/textname"
+        android:hint="enter name "
+        android:textColorHint="#78909C"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textname"
+        android:paddingStart="5sp"
+        android:paddingEnd="3dp"
+        android:layout_marginTop="63dp"
+        android:text="PASS"
+
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toEndOf="@+id/pass"
+        android:hint="enter password"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp" />
+
+
+
+
+</RelativeLayout>
+    <Button
+        android:id="@+id/LogBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Next"
+        android:layout_marginBottom="-70dp"
+        android:layout_gravity="center|center_horizontal"
+        style="@style/TextInputLayout"
+        />
+
+</FrameLayout>
